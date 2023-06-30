@@ -1,6 +1,6 @@
-//! # Minigrep
+//! # minigrep_pt_br_23
 //!
-//! `minigrep` é um CLI para pesquisar palavras em textos.
+//! `minigrep_pt_br_23` é um CLI para pesquisar palavras em textos.
 
 use std::env;
 use std::error::Error;
@@ -57,7 +57,7 @@ pub fn run(config: Config) -> Result<(), Box<dyn Error>> {
 /// # Examples
 ///
 /// ```
-/// use minigrep::search;
+/// use minigrep_pt_br_23::search;
 ///
 /// let query = "rust";
 /// let contents = "\

@@ -1,7 +1,7 @@
 use std::env;
 use std::process;
 
-use minigrep::Config;
+use minigrep_pt_br_23::Config;
 
 fn main() {
     let config = Config::build(env::args()).unwrap_or_else(|err| {
@@ -12,7 +12,7 @@ fn main() {
     println!("Searching for {}", config.query);
     println!("In file {}", config.file_path);
 
-    if let Err(e) = minigrep::run(config) {
+    if let Err(e) = minigrep_pt_br_23::run(config) {
         eprintln!("Application error: {e}");
         process::exit(1);
     }
