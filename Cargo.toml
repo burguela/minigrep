@@ -1,6 +1,6 @@
 [package]
 name = "minigrep_pt_br_23"
-version = "0.1.0"
+version = "0.1.1"
 edition = "2021"
 license = "MIT"
 description = "Minigrep feito com base no Rust Book."
