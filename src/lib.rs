@@ -82,7 +82,7 @@ Rust:
 new_test ballba
 new2test asda";
 
-assert_eq!(vec!["new_test ballba"], search(query, contents));
+        assert_eq!(vec!["new_test ballba"], search(query, contents));
     }
     #[test]
     fn case_sensitive() {
