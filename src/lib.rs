@@ -1,3 +1,7 @@
+//! # Minigrep
+//!
+//! `minigrep` é um CLI para pesquisar palavras em textos.
+
 use std::env;
 use std::error::Error;
 use std::fs;
@@ -48,6 +52,24 @@ pub fn run(config: Config) -> Result<(), Box<dyn Error>> {
     Ok(())
 }
 
+/// Procura 'query' dentro de 'contents' e retorna um Vec com as linhas de 'contents' que contém 'query'
+///
+/// # Examples
+///
+/// ```
+/// use minigrep::search;
+///
+/// let query = "rust";
+/// let contents = "\
+/// The rust language is very cool.
+/// But is also difficult.
+/// Than it is worth to learn rust.
+/// ";
+///
+/// assert_eq!(vec!["The rust language is very cool.", "Than it is worth to learn rust."],
+/// search(query, contents));
+/// ```
+///
 pub fn search<'a>(query: &str, contents: &'a str) -> Vec<&'a str> {
     contents
         .lines()
